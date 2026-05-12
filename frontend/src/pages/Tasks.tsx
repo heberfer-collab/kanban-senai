@@ -1,4 +1,4 @@
-import { Plus, MoreVertical, Clock, Tag as TagIcon, AlignLeft, Share2, Edit2, Trash2, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Plus, MoreVertical, Clock, Tag as TagIcon, Share2, Edit2, Trash2, CheckCircle2, AlertCircle } from 'lucide-react';
 import { useState, useCallback } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
@@ -58,7 +58,7 @@ export function Tasks() {
       );
       return { previousTasks };
     },
-    onError: (err, variables, context) => {
+    onError: (_err, _variables, context) => {
       if (context?.previousTasks) {
         queryClient.setQueryData(['tasks'], context.previousTasks);
       }

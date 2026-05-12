@@ -1,8 +1,7 @@
-import { Clock, Calendar, Tag as TagIcon, CheckCircle, Circle, User } from 'lucide-react';
-import { useParams, Link } from 'react-router-dom';
+import { Clock, Tag as TagIcon, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function SharedTask() {
-  const { token } = useParams();
 
   // Mock data por enquanto. Numa aplicação real, faremos fetch(`/api/shared/${token}`)
   const mockSharedTask = {
