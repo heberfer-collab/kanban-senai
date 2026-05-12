@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  
+  --color-bg-dark: #0f172a;
+  --color-bg-dark-card: #1e293b;
+  --color-text-dark: #f8fafc;
+  --color-text-muted: #94a3b8;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.dark body {
+  @apply bg-bg-dark text-text-dark;
+}
+
+/* Custom Scrollbar for Kanban */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 dark:bg-slate-700 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300 dark:bg-slate-600;
+}

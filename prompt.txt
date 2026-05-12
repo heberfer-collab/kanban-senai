@@ -1,0 +1,47 @@
+a ideia é assim: 
+- a pessoa entra app, faz login na conta dela 
+- ela consegue criar tarefas com título, uma descrição do que precisar fazer 
+- cada tarefa pode ter uma data limite para ser concluída
+- da para marcar se é urgente, média ou baixa prioridade
+- ela pode organizar as tarefas em categorias tipo: "trabalho", "casa", "estudos"
+- também quero um sistema de tags, tipo etiquetar a tarefa com palavras chaves
+- e o mais importante: quero uma tela inicial bonita tipo painel de controle mostrando quantas tarefas e a pessoa tem no total, quantas ela já fez hoje, quantas estão atrasadas... para ela ter uma visão geral da vida dela.
+- quero fazer uma stack simples, tipo react com express no backend, conectar banco sqlite.
+- me ajuda a pensar o que mais precisa ter e já cria o projeto
+
+
+
+agora preciso guardar OS  dados dos usuários
+cada pessoa que logar precisa ter:
+- o perfil dela(nome, email, foto de avatar)
+- as tarefas dela, cada tarefa tem titulo, descrição, se esta feita ou não, a prioridade (alta, media, baixa) e a data que precisa entregar 
+as categorias são fixas por enquanto: trabalho, pessoal, estudos, casa e as tags a pessoa cria na hora, tipo "reunião", "urgente", "cliente x" uma tarefa pode ter varias tags ao mesmo tempo
+monta o banco e cria uma tela de perfil do usuário mostrando os dados dele e um botão para sai da conta
+
+
+agora cria as funções do sistema de tarefas
+o usuário precisa conseguir:
+-criar uma tarefa nova preenchendo os campos 
+- ver a lista de todas as tarefas dele
+- editar uma tarefa que já existe 
+- deletar uma tarefa 
+- clicar num botão pra marcar com concluída 
+se u usuário tentar salvar sem preencher o titulo, mostra um erro, se der algum problema no sistema, mostra uma mensagem amigável
+cria as telas pra tudo isso funcionar a lista de tarefas, o formulário pra criar/editar, confirmação para deletar.
+se algo já existir, basta ignorar 
+preciso movimentar as as tarefas entre concluído, em progresso e concluído.
+na tela do dashboard preciso também que botão nova tarefa crie também tarefas, 
+crie uma logo para esse site 
+e depois teste
+
+
+agora a parte mais importante: o painel principal que o usuário ve quando loga
+na lateral esquerda:
+- o menu de navegação com ícones(inicio, minhas tarefas, categorias, configurações)
+- o nome e foto do usuário la embaixo
+na área principal:
+um saudação "bom dia fulano"
+cards grandes mostrando quantas tarefas a pessoa completou nos últimos 7 dias
+- embaixo a lista das tarefas próximas a vencer
+- um botão flutuante pra criar tarefa nova que abre um formulário
+o visual tem que ser moderno, fundo escuro, com aquele efeito de vidro fosco nos cards.
